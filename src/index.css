@@ -4,26 +4,35 @@
 
 :root {
     --font: "Open Sans", sans-serif;
-    --font-size: 62.5%; /*1rem = 16px */
-    --primary-color: #3B82F6;    /* Azul vibrante para títulos y enlaces */
-    --secondary-color: #10B981;  /* Verde esmeralda para botones y acciones */
-    --accent-color: #F59E0B;     /* Amarillo dorado para resaltar */
-    --light-background: #F3F4F6; /* Fondo claro suave para la interfaz */
-    --dark-background: #111827;  /* Fondo oscuro para el modo nocturno */
-    --text-primary: #1F2937;     /* Color principal para el texto */
-    --text-secondary: #4B5563;   /* Color secundario para subtítulos */
-    --border-color: #E5E7EB;     /* Color para bordes y divisores */
+    --font-size: 62.5%;
+    /*1rem = 16px */
+    --primary-color: #3B82F6;
+    /* Azul vibrante para títulos y enlaces */
+    --secondary-color: #10B981;
+    /* Verde esmeralda para botones y acciones */
+    --accent-color: #F59E0B;
+    /* Amarillo dorado para resaltar */
+    --light-background: #F3F4F6;
+    /* Fondo claro suave para la interfaz */
+    --dark-background: #111827;
+    /* Fondo oscuro para el modo nocturno */
+    --text-primary: #1F2937;
+    /* Color principal para el texto */
+    --text-secondary: #4B5563;
+    /* Color secundario para subtítulos */
+    --border-color: #E5E7EB;
+    /* Color para bordes y divisores */
 
 }
 
-html{
+html {
     box-sizing: border-box;
     font-size: var(--font-size);
 }
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
@@ -32,4 +41,14 @@ body {
     font-family: var(--font);
     font-size: 1.6rem;
     line-height: 2;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
