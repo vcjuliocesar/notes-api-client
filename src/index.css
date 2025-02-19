@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+:root {
+    --font: "Open Sans", sans-serif;
+    --font-size: 62.5%;
+    /*1rem = 16px */
+    --primary-color: #3B82F6;
+    /* Azul vibrante para títulos y enlaces */
+    --secondary-color: #10B981;
+    /* Verde esmeralda para botones y acciones */
+    --accent-color: #F59E0B;
+    /* Amarillo dorado para resaltar */
+    --light-background: #F3F4F6;
+    /* Fondo claro suave para la interfaz */
+    --dark-background: #111827;
+    /* Fondo oscuro para el modo nocturno */
+    --text-primary: #1F2937;
+    /* Color principal para el texto */
+    --text-secondary: #4B5563;
+    /* Color secundario para subtítulos */
+    --border-color: #E5E7EB;
+    /* Color para bordes y divisores */
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: var(--font-size);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--light-background);
+    font-family: var(--font);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.auth {
+    max-width: 40rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.auth__title {
+    font-size: 2.4rem;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth__field {
+    margin-bottom: 1.5rem;
+}
+
+.auth__label {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.auth__input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    background-color: var(--light-background);
+    transition: border-color 0.3s;
+}
+
+.auth__input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.auth__button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth__button:hover {
+    background-color: #2563eb;
+}
+
+.auth__text {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+}
+
+.auth__link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth__link:hover {
+    text-decoration: underline;
+}
